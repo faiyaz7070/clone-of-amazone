@@ -5,17 +5,21 @@ console.log(todaydeal)
 let todaydealbtnprev=document.getElementById("today-deal-btn-prev")
 let todaydealbtnnext=document.getElementById("today-deal-btn-next")
 let todaydealproductitem=document.querySelectorAll(".today-deals-product-items")
+console.log(todaydealproductitem);
 let startproduct=0;
 todaydealbtnprev.addEventListener("click",()=>{
-    alert("done")
+  
 })
 todaydealbtnnext.addEventListener("click",()=>{
-    alert("done")
- startproduct-=500
- todaydealproductitem.forEach((el)=>{
-    el.style.transform= `translateX(${startproduct}%)`
- })
-    
+    // alert("done")
+
+    startproduct-=500
+    console.log(startproduct);
+  todaydealproductitem.forEach((el)=>{
+    // alert("done")
+   let x= el.style.transform=`translateX(${startproduct}%)`;
+   console.log(x)
+  })
 })
 let todaydealcontainer=document.querySelector(".today-deals-product-list")
 // console.log(todaydealcontainer);
@@ -24,8 +28,10 @@ let todaydeallength=todaydeal.length
 for(let i=0;i<todaydeallength;i++){
 todaydealproducthtml+=`
       <div class="today-deals-product-items">
+  
      
       <img src=${todaydeal[i].img} />
+
     
        <div class="discount-container">
         <a href="#">Up to ${todaydeal[i].discount} off</a>
