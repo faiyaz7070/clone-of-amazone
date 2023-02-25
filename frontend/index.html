@@ -10,6 +10,268 @@
    
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body{
+            width: 100vw;
+        }
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        /* section{
+            width: 100vw;
+            /* height: 300px; */
+            /* padding: 25px; */
+            
+
+        /* } */ */
+        .slide-sec h3{
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+        .slide-sec{
+            /* border: 2px solid red; */
+            /* width: 100%; */
+            height: 100%;
+            padding: 20px;
+            overflow-x: hidden;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            margin-left: 10px;
+        }
+        .product-slide{
+            /* height: 250px; */
+            /* border: 2px solid red; */
+            display: flex;
+            /* margin-top: 5px; */
+            /* margin-bottom: 5px; */
+            /* padding: 10px; */
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+        }
+        .product-slide::-webkit-scrollbar{
+            background-color: transparent;
+            height: 7px;
+            cursor: pointer;
+        }
+        .product-slide li{
+            list-style: none;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        .product-slide li img{
+            height: 100%;
+            /* padding: ; */
+        }
+        .slide-btn-left , .slide-btn-right{
+            background-color: rgba(255, 255, 255, 0.831);
+            height: 90px;
+            width: 50px;
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            top: 35%;
+            position: absolute;
+            border: 3px solid transparent;
+            transition: 0.5s;
+        }
+        .slide-btn-left{
+            border-radius: 0 5px 5px 0;
+            left: 20px;
+        }
+        .slide-btn-right{
+            border-radius: 5px 0 0 5px;
+            right: 20px;
+        }
+        .slide-btn-left:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .slide-btn-right:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .product-slide1{
+            /* height: 250px; */
+            /* border: 2px solid red; */
+            display: flex;
+            /* margin-top: 5px; */
+            /* margin-bottom: 5px; */
+            /* padding: 10px; */
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+        }
+        .product-slide1::-webkit-scrollbar{
+            background-color: transparent;
+            height: 7px;
+            cursor: pointer;
+        }
+        .product-slide1 li{
+            list-style: none;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        .product-slide1 li img{
+            height: 100%;
+            /* padding: ; */
+        }
+        .slide-btn-left1 , .slide-btn-right1{
+            background-color: rgba(255, 255, 255, 0.831);
+            height: 90px;
+            width: 50px;
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            top: 35%;
+            position: absolute;
+            border: 3px solid transparent;
+            transition: 0.5s;
+        }
+        .slide-btn-left1{
+            border-radius: 0 5px 5px 0;
+            left: 20px;
+        }
+        .slide-btn-right1{
+            border-radius: 5px 0 0 5px;
+            right: 20px;
+        }
+        .slide-btn-left1:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .slide-btn-right1:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .product-slide2{
+            /* height: 250px; */
+            /* border: 2px solid red; */
+            display: flex;
+            /* margin-top: 5px; */
+            /* margin-bottom: 5px; */
+            /* padding: 10px; */
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+        }
+        .product-slide2::-webkit-scrollbar{
+            background-color: transparent;
+            height: 7px;
+            cursor: pointer;
+        }
+        .product-slide2 li{
+            list-style: none;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        .product-slide2 li img{
+            height: 100%;
+            /* padding: ; */
+        }
+        .slide-btn-left2 , .slide-btn-right2{
+            background-color: rgba(255, 255, 255, 0.831);
+            height: 90px;
+            width: 50px;
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            top: 35%;
+            position: absolute;
+            border: 3px solid transparent;
+            transition: 0.5s;
+        }
+        .slide-btn-left2{
+            border-radius: 0 5px 5px 0;
+            left: 20px;
+        }
+        .slide-btn-right2{
+            border-radius: 5px 0 0 5px;
+            right: 20px;
+        }
+        .slide-btn-left2:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .slide-btn-right2:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .product-slide3{
+            /* height: 250px; */
+            /* border: 2px solid red; */
+            display: flex;
+            /* margin-top: 5px; */
+            /* margin-bottom: 5px; */
+            /* padding: 10px; */
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+        }
+        .product-slide3::-webkit-scrollbar{
+            background-color: transparent;
+            height: 7px;
+            cursor: pointer;
+        }
+        .product-slide3 li{
+            list-style: none;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        .product-slide3 li img{
+            height: 100%;
+            /* padding: ; */
+        }
+        .slide-btn-left3 , .slide-btn-right3{
+            background-color: rgba(255, 255, 255, 0.831);
+            height: 90px;
+            width: 50px;
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            top: 35%;
+            position: absolute;
+            border: 3px solid transparent;
+            transition: 0.5s;
+        }
+        .slide-btn-left3{
+            border-radius: 0 5px 5px 0;
+            left: 20px;
+        }
+        .slide-btn-right3{
+            border-radius: 5px 0 0 5px;
+            right: 20px;
+        }
+        .slide-btn-left3:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .slide-btn-right3:hover{
+            /* border: 3px solid rgb(2,150,150); */
+            background-color: rgba(255, 255, 255, 0.447);
+        }
+        .sec-2{
+            display: flex;
+            /* border: 2px solid red; */
+            align-items: center;
+
+        }
+        .sec-2 .live img{
+            height: 290px;
+            margin-left: 20px;
+            margin-right: 2px;
+
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -523,6 +785,141 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="slide-sec">
+                <div class="slide-btn-left">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      
+                    </span>
+                </div>
+                <div class="slide-btn-right">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                     
+                </span>
+                </div>
+                <h3>Up to 60% off | Curated furniture picks for your home</h3>
+                    <ul class="product-slide">
+                        <li><img src="https://m.media-amazon.com/images/I/71TDdYyUSgL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71NEeEGREnL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61Xm0MrGWPL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/414hwfJEyaL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/81XmFxFBTHL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71Xi4xSbTVS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/51ED-8GIw9L._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71TDdYyUSgL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71NEeEGREnL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61Xm0MrGWPL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/414hwfJEyaL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/81XmFxFBTHL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71Xi4xSbTVS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/51ED-8GIw9L._AC_SY200_.jpg" alt=""></li>
+                    </ul>
+            </div>
+        </section>
+        <section class="sec-2">
+            <div class="live">
+               <img src="https://cdn.shopify.com/s/files/1/0272/9725/files/image18.gif?v=1508048489" alt="">
+            </div>
+            <div class="slide-sec">
+                <div class="slide-btn-left1">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </span>
+                </div>
+                <div class="slide-btn-right1">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                       
+                </span>
+                </div>
+                <h3>Up to 60% off | Home décor picks from local shops</h3>
+                    <ul class="product-slide1">
+                        <li><img src="https://m.media-amazon.com/images/I/81WY43xc5oL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/812B6F8vJwL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71rH7Skt1QL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/61op5HQbreL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/61genUAVkAL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61O5HoaOjCS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/41DrjwfCGHS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/81WwW7rZSaL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61Cbg262VQL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61OeQJZgIiL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/414hwfJEyaL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/81XmFxFBTHL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71Xi4xSbTVS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/51ED-8GIw9L._AC_SY200_.jpg" alt=""></li>
+                    </ul>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="slide-sec">
+                <div class="slide-btn-left2">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      
+                    </span>
+                </div>
+                <div class="slide-btn-right2">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                     
+                </span>
+                </div>
+                <h3>Under ₹599 | Popular home & kitchen picks on a budget from local shops</h3>
+                    <ul class="product-slide2">
+                        <li><img src="https://m.media-amazon.com/images/I/51ElvVn--GL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71jDgbvJQCL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/91CZqaO7BWL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/81Mx7zDg8uL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/8101uN22EvL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/91VxMFzTHGL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/A1V8HmpatnL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/91F104LXpLL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71HaMYFlbpL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61ByPaeEZkL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/81HVBLT6-hL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/71kp4OcxqlL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/810XLUNgLrL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/71+tdMeevNL._AC_SY200_.jpg" alt=""></li>
+                    </ul>
+            </div>
+        </section>
+        <section>
+            <div class="slide-sec">
+                <div class="slide-btn-left3">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      
+                    </span>
+                </div>
+                <div class="slide-btn-right3">
+                    <span class="material-symbols-outlined">
+                        <i class="fa-solid fa-chevron-right"></i>
+                     
+                </span>
+                </div>
+                <h3>Season's best sellers from small businesses</h3>
+                    <ul class="product-slide3">
+                        <li><img src="https://m.media-amazon.com/images/I/61lck+zplBS._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61EDUtbAZML._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71MzzE-FvFL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/51X0aZusUbL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/71os5xOCZpL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/71VXtHIy5KL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="	https://m.media-amazon.com/images/I/41A+8s8hQOL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/81+b7h4dWmL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/417svyQDFIL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/61+XgzrhfFL._AC_SY200_.jpg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/21Aw56EdssL._AC_SY200_.jpg" alt=""></li>
+                      
+                        <li><img src="	https://m.media-amazon.com/images/I/713CvNxsadL._AC_SY200_.jpg" alt=""></li>
+                    </ul>
+            </div>
+        </section>
     </main>
     
 
@@ -532,6 +929,51 @@
 <script src="javascript.js" type="module"> 
 </script>
 <script>
+       let left=document.querySelector(".slide-btn-left")
+        let right=document.querySelector(".slide-btn-right")
+
+        right.addEventListener('click',function (event){
+            document.querySelector('.product-slide').scrollLeft+=1100
+            event.preventDefault();
+        })
+        left.addEventListener('click',function (event){
+            document.querySelector('.product-slide').scrollLeft-=1100
+            event.preventDefault();
+        })
+        let left1=document.querySelector(".slide-btn-left1")
+        let right1=document.querySelector(".slide-btn-right1")
+
+        right1.addEventListener('click',function (event){
+            document.querySelector('.product-slide1').scrollLeft+=1100
+            event.preventDefault();
+        })
+        left1.addEventListener('click',function (event){
+            document.querySelector('.product-slide1').scrollLeft-=1100
+            event.preventDefault();
+        })
+        let left2=document.querySelector(".slide-btn-left2")
+        let right2=document.querySelector(".slide-btn-right2")
+
+        right2.addEventListener('click',function (event){
+            document.querySelector('.product-slide2').scrollLeft+=1100
+            event.preventDefault();
+        })
+        left2.addEventListener('click',function (event){
+            document.querySelector('.product-slide2').scrollLeft-=1100
+            event.preventDefault();
+        })
+        let left3=document.querySelector(".slide-btn-left3")
+        let right3=document.querySelector(".slide-btn-right3")
+
+        right3.addEventListener('click',function (event){
+            document.querySelector('.product-slide3').scrollLeft+=1100
+            event.preventDefault();
+        })
+        left3.addEventListener('click',function (event){
+            document.querySelector('.product-slide3').scrollLeft-=1100
+            event.preventDefault();
+        })
+        
     let slidebtnleft=document.getElementById("slider-btn-left")
     let slidebtnright=document.getElementById("slider-btn-right")
     let imageitem=document.querySelectorAll(".image-item")
@@ -557,7 +999,9 @@
         
        
         imageitem.forEach((el=>{
-            el.style.transform=`translateX(${startSlider}%)`;
+        el.style.transform=`translateX(${startSlider}%)`;
+       
+
         }))
         
     })

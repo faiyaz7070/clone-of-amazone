@@ -363,8 +363,8 @@ justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* box-shadow: -20px -0px 10px rgba(255, 255,255,0.5),
-    20px 20px 10px rgba(255, 255,255,0.5);; */
+    box-shadow: -20px -0px 10px rgba(255, 255,255,0.5),
+    20px 20px 10px rgba(255, 255,255,0.5);;
 
 }
 .card-product h2{
@@ -395,11 +395,17 @@ color: aqua;
 .today-deals-product-items{
    min-width: 250px;
    height: 290px;
-   padding: 10px 20px;
+   padding: 0px 10px;
    margin-right: 10px;
-   /* transform: translateX(-100%); */
+   display:flex;
+   flex-direction: column;
+   transform: translateX(0%);
 /* 
    height: 290px; */
+}
+.todaydeal-product-image{
+    max-height: 200px;
+    max-width: 210px;
 }
 
 
@@ -415,10 +421,10 @@ color: aqua;
 .today-deals-product-container{
  
     /* padding: 25px; */
-    /* height: 260px; */
+    height: 300px;
     /* background-color: red; */
     position: relative;
-
+overflow: hidden;
 }
 .today-deals-container{
     margin: 30px;
@@ -443,9 +449,10 @@ padding-left: 18px;
 .today-deal-heading p a:hover{
     text-decoration: underline;
 }
-/* .discount-container{
+.discount-container{
+    border: 0px;
     /* border: 2px solid red; */
-/* } */ */
+}
 .discount-container a{
     padding: 5px 10px ;
     font-size: 12px;
@@ -469,6 +476,7 @@ justify-content: space-between;
 align-items: center;
 height: 100%;
 padding: 20px;
+z-index: 10;
 }
 
 .today-deal-btn{
