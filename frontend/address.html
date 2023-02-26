@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>address</title>
+ 
+    
+    <link rel="stylesheet" href="address.css" />
+    <style>
+        input{
+            border: none;
+            outline: none;
+        }
+    </style>
+   
+  </head>
+
+  <body>
+  
+            <
+      <div class="help_link">
+        <div class="help_link_innerdiv">
+          <a href="/help" class="help_link_anc"><span>Need Help?</span></a>
+        </div>
+      </div>
+    </div>
+    
+    <form>
+    <div id="maindiv">
+      <div class="container">
+        <div class="middle">
+          <div><div class="address">Address</div></div>
+          <div class="inpaddress">
+            <textarea
+              type="text"
+              class="flat"
+              placeholder="Flat Number,Building Name,Street/Locality"
+              id="flatno"
+              value=""
+            ></textarea>
+          </div>
+          <div class="landmark">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Landmark (optional)"
+              id="landmarkno"
+            />
+          </div>
+          <div class="pincode">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Pincode"
+              id="Pincodeno"
+            />
+          </div>
+          <div class="locality">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Locality"
+              id="localityno"
+            />
+          </div>
+          <div class="city">
+            <input type="text" class="flat" placeholder="City" id="cityno" />
+          </div>
+          <div class="state">
+            <input type="text" class="flat" placeholder="State" id="stateno" />
+          </div>
+          <div class="customer">
+            <input
+              type="text"
+              class="flat"
+              placeholder="Customer Name"
+              id="custname"
+            />
+          </div>
+          <div class="digit">
+            <input
+              type="text"
+              class="flat"
+              placeholder="10 digit Mobile Number"
+              id="custmobile"
+            />
+          </div>
+          <div class="option">
+            <input
+              type="radio"
+              id="Home"
+              name="Home"
+              value="Home"
+              style="margin-right: -70px"
+              value="1"
+            
+            />
+            <label for="Home">Home</label>
+            <input
+              type="radio"
+              id="Office"
+              name="Home"
+              value="Office"
+              style="margin-right: -70px"
+              value="2"
+             
+            />
+            <label for="Office">Office</label>
+            <input
+              type="radio"
+              id="Other"
+              name="Home"
+              value="Other"
+              style="margin-right: -70px"
+              value="3"
+             
+            />
+            <label for="Other">Other</label>
+          </div>
+          <div class="below">
+            <div class="save">
+                <input type="submit" id="save_btn" value="submit" style="  background-color:  rgba(0, 0, 0, 0.575);" />
+            </div>
+            <div class="cancel">
+          
+              <input type="submit" id="continue_btn" value="Cancel" style="  background-color:  rgba(0, 0, 0, 0.575);" />
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    </form>
+ 
+  </body>
+  <script src="address.js"></script>
+ 
+</html>

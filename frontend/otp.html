@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart|1mg</title>
+    <link rel="stylesheet" href="otp.css" />
+    <link
+    rel="icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+    type="image/x-icon"
+  />
+  </head>
+  <body>
+    <div id="container">
+      <form id="otpform">
+        <h3>Mobile phone verification</h3>
+        <div>
+          <p class="text">Enter the code we just send on your mobile phone</p>
+          <p class="num_resend"></p>
+        </div>
+        <div id="otpcontiner">
+          <input type="text" id="otp1" maxlength="1"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"/> <input
+          type="text" id="otp2" maxlength="1"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"/> <input
+          type="text" id="otp3" maxlength="1"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"/> <input
+          type="text" id="otp4" maxlength="1"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');"/>
+        </div>
+        <input id="btn" type="submit" value="Proceed" />
+        <div>
+          <p class="text">Don't receive the OTP?</p>
+          <p class="num_resend">Resend</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="otp.js"></script>

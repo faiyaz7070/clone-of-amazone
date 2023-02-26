@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popular</title>
+    <link rel="stylesheet" href="navbar.css">
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #total{
+            text-align: center;
+        }
+        #api{
+            display: flex;
+        }
+        #post input{
+           width: 250px;
+           height: 40px;
+           margin-left: 10px;
+           margin-top: 5px;
+           text-align: center;
+           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+           outline: none;
+           border: none;
+
+        }
+        input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #btn{
+            text-align: center;
+            margin-left: 80px;
+            width: 110px;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: none;
+            margin-top: 5px;
+        }
+        #btn1{
+            text-align: center;
+            margin-left: 80px;
+            width: 110px;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: none;
+            margin-top: 5px;
+        }
+        #btn2{
+            text-align: center;
+            margin-left: 80px;
+            width: 110px;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: none;
+            margin-top: 5px;
+        }
+        #total{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(19,25, 33);
+            margin:0;
+        }
+        #total h2{
+            margin: 0;
+            padding-top: 8px;
+            color: white;
+        }
+      
+    </style>
+    
+
+</head>
+<body>
+
+   <div id="total">
+    <h2 id="todalcount">0</h2>
+    
+</div>
+
+
+    <!-- <div id="body_FA"> -->
+        <h2 style="margin-left: 20px;">Add Products:-</h2>
+        <div id="api"> 
+        <div id="post">  
+        <input type="number" placeholder="enter id" id="id" ><br>
+<input type="string" placeholder="enter title" id="title" ><br>
+
+<input type="text" placeholder="enter url" id="image" ><br>
+<input type="number" placeholder="enter rating" id="rating" ><br>
+<input type="number" placeholder="enter price" id="price" ><br>
+<button id="btn">Add</button>
+<h2 style="margin-left: 20px;">Edit Products:-</h2>
+
+<input type="number" placeholder="enter old id" id="id1" ><br>
+<input type="string" placeholder="enter new  title" id="title1" ><br>
+
+<input type="text" placeholder="enter new url" id="image1" ><br>
+<input type="number" placeholder="enter new rating" id="rating1" ><br>
+<input type="number" placeholder="enter new price" id="price1" ><br>
+<button id="btn1">Edit</button>
+<h2 style="margin-left: 20px;">Delete Products:-</h2>
+
+<input type="number" placeholder="enter old id" id="id2" ><br>
+<button id="btn2">Delete</button>
+
+</div>
+    
+         
+        <div id="Api_section">
+
+      <!-- --------------footer-------------- -->
+      
+
+        </div>
+    </div>
+</body>
+<script src="admin.js"></script>
+
+
+</html>

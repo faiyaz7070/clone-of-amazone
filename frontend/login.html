@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="image\apni_dukan_logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      
+      <div class="login_form">
+        <h2>Please log in to continue</h2>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            type="text"
+            placeholder="Username"
+            class="input_text"
+            autocomplete="off"
+            id="username"
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            class="input_text"
+            autocomplete="off"
+            id="pass"
+          />
+        </div>
+        <div class="button_group" id="login_button">
+          <a>Submit</a>
+        </div>
+        <div class="fotter">
+          <a>Forgot Password ?</a>
+          <a onclick="window.location.href = 'adminlogin.html'"> Admin </a>
+          <a onclick="window.location.href = 'register.html'"> Sign up</a>
+          <!-- <a href="home.html">
+         <img src="image\apni_dukan_logo-removebg-preview.png" alt=""></a> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script >
+ 
+ let btn=document.getElementById("login_button")
+ btn.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+       
+        let userdetail = {
+            
+             email :document.getElementById("username").value,
+              pass :document.getElementById("pass").value
+
+        }
+      
+
+        fetch("https://shy-red-crow-fez.cyclic.app/login",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(userdetail)
+        }).then(res=>res.json())
+        .then((res)=>{
+          console.log(res)
+
+          alert("login Successful")
+          window.location.href = "index.html";
+        } )
+        .catch((err)=>{
+          console.log(err)
+          alert(err.message)
+        })
+        
+    });
+
+
+
+    </script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="mobile.css">
+    <style>
+        #brandcontainer{
+            display: flex;
+        }
+        #filter{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #filter h2{
+            margin: 0;
+        }
+        #Api_section{
+           
+            width:89%;
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+     <header class="header">
+    <div class="container container-header">
+        <div class="logo-container border-white">
+        <div class="logo">
+
+
+        </div>
+        <span class="dotin">.in</span>
+    </div>
+    <div class="address-container border-white">
+        <p class="hello">Hello</p>
+        <div class="icon-address">
+            <i class="fa-solid fa-location-pin"></i>
+            <p>Select your address</p>
+
+        </div>
+
+
+    </div>
+    <div class="search-container">
+        <select class="search-select">
+            <option >All</option>
+        </select>
+        <input type="text" class="search-input" id="searchinput" placeholder="Search Amazon.in">
+        <div class="search-icon1" id="search-icon1">
+            <p>search</p>
+
+        </div>
+
+
+    </div>
+    <div class="language-container border-white">
+        <p>English</p>
+<div class="language-image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMbJ1mBSSpAmpAZFz_Ns0uApw7Fel2id9gsdqjtt3A&s" alt="">
+
+</div>
+    </div>
+    <div class="login-container border-white">
+        <p>Hello,<span>Sign in</span></p>
+        <p class="account">Account & Lists</p>
+
+    </div>
+<div class="return-order-container border-white">
+    <p>Returns <div class="order">& Orders</div></p>
+
+
+</div>
+<div class="cart-container border-white" onclick="window.location.href = 'cart.html'" >
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart
+
+</div>
+      </div>
+      
+    </header>
+    <!-- nav section -->
+    <nav class="nav">
+        <div class="container container-nav">
+            <ul>
+                <li class="border-white" id="open-nav-slidebar">
+                    <span class="open-nav-slider">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+
+                    </span>
+                </li>
+                <li class="border-white"><a href="#">Amazon miniTV</a></li>
+                <li class="border-white"><a href="#">Sell</a></li>
+                <li class="border-white"><a href="#">Best Sellers</a></li>
+                <li class="border-white"><a href="#">Mobiles</a></li>
+                <li class="border-white"><a href="#">Customer service</a></li>
+                <li class="border-white"><a href="#">Today,s Deals</a></li>
+                <li class="border-white"><a href="#">Electronics</a></li>
+                <li class="border-white Prime-image-hover"><a href="#">Primes</a>
+                <div class="Prime-image">
+                    <img  src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB613900605_.jpg" alt="">
+
+                </div></li>
+                <li class="border-white"><a href="#">Amazon Pay</a></li>
+                <li class="border-white"><a href="#">Fashion</a></li>
+                <li class="border-white"><a href="#">New Releases</a></li>
+            </ul>
+            <!-- <div class="nav-right-image">
+                <img src="https://m.media-amazon.com/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg" alt="">
+
+            </div> -->
+
+
+        </div>
+    </nav>
+    <!-- sidenavigation -->
+    <div class="slider-container" id="slidebar-container-navigation">
+        <div class="slidebar-leftpart">
+            <div class="sidebar-top">
+                <i class="fa-solid fa-circle-user"></i>
+                <h2>Hello,<span>Sign in</span></h2>
+
+            </div>
+            <div class="sidebar-wrap">
+
+            
+            <div class="slidebar-item">
+                <h2>Trending</h2>
+                <p>Best Sellers</p>
+                <p>New Release</p>
+                <p>Movers and Shakers</p>
+
+            </div>
+            <div class="slidebar-item">
+                <h2>Digital Content And Devices</h2>
+                <p>Echo& Alexa</p>
+                <p>Fire TV</p>
+                <p>Kindle E-Readers & eBooks</p>
+                <p>Audible Audiobooks</p>
+                <p>Amazon Prime Video</p>
+                <p>Amazon Prime Music</p>
+
+            </div>
+            <div class="slidebar-item">
+                <h2>Shop By Category</h2>
+                <p>Mobiles, Computers</p>
+                <p>TV, Appliances, Electronics</p>
+                <p>Men's Fashion</p>
+                <p>Women's Fashion</p>
+                <p><select class="search-select2"> <option class="option">See All</option> </select></p>
+               
+
+            </div>
+            <div class="slidebar-item">
+                <h2>Programs & Features</h2>
+                <p>Gift Card & Mobile Recharges</p>
+                <p>Flight Ticket</p>
+                <p>Clearance store</p>
+              
+            </div>
+            <div class="slidebar-item">
+                <h2>Help & Settings</h2>
+                <p>Your Account</p>
+                <p>Customer Service</p>
+                 <p>Sign in</p>
+              
+              </div>
+            </div>
+
+        </div>
+        <button id="slidebar-navigation-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+    </div>
+
+
+
+
+    <div id="brandcontainer">
+
+   <div id="filter">
+    <h2>Top Brands</h2>
+    <input type="checkbox" id="Brands6" name="Brands1"  value="Samsung" class="filt">
+    <label for="Brands5">Samsung</label> <br>
+    <input type="checkbox" id="Brands7" name="Brands1" value="Apple" class="filt">
+    <label for="Brands6">Apple</label> <br>
+    <input type="checkbox" id="Brands8"  name="Brands1"value=" Oneplus" class="filt">
+    <label for="Brands7"> Oneplus</label> <br>
+    <input type="checkbox" id="Brands9" name="Brands1"value="Redmi" class="filt">
+    <label for="Brands8">Redmi</label> <br>
+    <input type="checkbox" id="Brands10" name="Brands1"value="Realmi" class="filt">
+    <label for="Brands9">Realmi</label> <br>
+
+   </div>
+   
+      
+     
+        <div id="Api_section">
+
+      <!-- --------------footer-------------- -->
+      
+
+        </div>
+    </div>
+</body>
+<script src="mobile.js"></script>
+<script>
+      let slide=document.getElementById("slidebar-container-navigation")
+    let sidebarbtnopen=document.getElementById("open-nav-slidebar")
+    sidebarbtnopen.addEventListener("click",()=>{
+        slide.classList.toggle("slider-show")
+    })
+let closebtn=document.getElementById("slidebar-navigation-close")
+closebtn.addEventListener("click",()=>{
+    slide.classList.toggle("slider-show")
+
+})
+</script>
+
+</body>
+</html>
