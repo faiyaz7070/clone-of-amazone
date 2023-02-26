@@ -10,6 +10,9 @@ body{
 background-color: rgb(19,25, 33);
 height: 60px;
 color: #ffff;
+/* position: sticky;
+z-index: 100; */
+/* top: 0; */
 }
 /* layout/ */
 .container{
@@ -186,11 +189,23 @@ padding: 0.1px;
 }
 /* login-container */
 .login-container{
+    display: flex;
+    width: 140px;
 margin-left: 30px;
+justify-content: space-between;
 }
 .login-container p{
     margin: 0px;
+    cursor: pointer;
 
+}
+.signin{
+    cursor: pointer;
+   width:70px
+}
+.signin{
+    cursor: pointer;
+   width:70px
 }
 .account{
     font-weight: 900;

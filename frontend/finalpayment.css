@@ -1,0 +1,540 @@
+* {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* nav-bar */
+  
+  .nav {
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+  }
+  
+  .container {
+    background-color: #fff;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-left: 20px;
+  }
+  
+  .logo > img {
+    max-width: 200%;
+  }
+  
+  .second {
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  .circle1 {
+    width: 20px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 0px;
+  }
+  
+  .circle2 {
+    width: 20px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 0px;
+    margin-left: 8px;
+  }
+  
+  .circle8 {
+    width: 20px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 0px;
+    margin-left: 8px;
+  }
+  
+  .cart {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .ordersummary {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .payment {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .cirfix {
+    margin: auto;
+  }
+  
+  .middlecont {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    height: 500px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+  }
+  
+  .left {
+    display: flex;
+    width: 50%;
+    margin-left: 100px;
+  }
+  
+  .wallet {
+    width: 35%;
+    background-color: #fff3e3;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    padding-top: 20px;
+    gap: 20px;
+  }
+  
+  .wallet img {
+    height: 70%;
+    width: 80%;
+  }
+  
+  .right {
+    width: 30%;
+    margin-left: 40px;
+  }
+  
+  /* .wallet {} */
+  
+  /* .creditcard {} */
+  
+  /* .right {} */
+  
+  .wallets {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+  
+  .imgwal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cont-wal {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(33, 33, 33, 0.87);
+  }
+  
+  .cont-wal:hover {
+    color: #ff6f61;
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* credit card detail */
+  
+  .credicard {
+    width: 60%;
+    background-color: white;
+  }
+  
+  .upper {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .creditdebit {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .addnew {
+    color: grey;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  
+  .cardnamee {
+    color: grey;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  input::placeholder {
+    color: grey;
+  }
+  
+  .all {
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+    outline: none;
+  }
+  
+  #datediv > input {
+    width: 30px;
+  }
+  
+  .expisc {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .expiry {
+    color: grey;
+    font-size: 12px;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+  }
+  
+  #slash {
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-right: -10px;
+  }
+  
+  .securitycode {
+    color: grey;
+    font-size: 12px;
+    /* margin-top: 20px; */
+    margin-left: 175px;
+    width: 100px;
+  }
+  
+  .namecard {
+    display: flex;
+    height: 5%;
+  }
+  
+  .check {
+    display: flex;
+    align-items: center;
+    margin-left: 134px;
+  }
+  
+  .infor {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 13px;
+    width: 90%;
+  }
+  
+  .makepayment {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .paymentmake {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    width: 150px;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+  
+  /* total price */
+  
+  .sumofcont {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sumofcont2 {
+    /* innerdiv */
+    display: flex;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  
+  .iteamdis {
+    /* iteam disc */
+    margin-left: 15px;
+  }
+  
+  .mrprate {
+    margin-left: 250px;
+    width: 50px;
+    text-align: right;
+  }
+  
+  .secondtot {
+    /* second div */
+    display: flex;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  
+  .moprate {
+    /* second div right */
+    margin-left: 15px;
+  }
+  
+  .mcprate {
+    margin-left: 270px;
+    width: 50px;
+    text-align: right;
+  }
+  
+  .ship {
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid grey;
+    padding-top: 5px;
+  }
+  
+  .shipingfee {
+    margin-left: 15px;
+  }
+  
+  .asshipping {
+    margin-left: 165px;
+  }
+  
+  .thirdtotal {
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid grey;
+    padding-top: 5px;
+  }
+  
+  .tobepaid {
+    margin-left: 15px;
+  }
+  
+  .moneyinrupee {
+    margin-left: 300px;
+    width: 50px;
+    text-align: right;
+  }
+  
+  .fourth {
+    /*  */
+    display: flex;
+    margin-top: 10px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: #aed581;
+  }
+  
+  .totalsaving {
+    /*  */
+    margin-left: 15px;
+  }
+  
+  .savedmoney {
+    /*  */
+    margin-left: 280px;
+    text-align: right;
+    width: 50px;
+  }
+  
+  .checkoutbut {
+    width: 80%;
+    margin: auto;
+    background-color: tomato;
+    font-size: 20px;
+    width: 80%;
+    border: tomato;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 20px;
+  }
+  
+  .deliverylocation {
+    display: flex;
+  }
+  
+  .locat {
+    color: black;
+    font-size: 15px;
+    margin-left: 46px;
+  }
+  
+  .checkout {
+    margin-top: 50px;
+  }
+  
+  .placename {
+    margin-left: 185px;
+    color: tomato;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  .checkout {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    margin-top: 50px;
+  }
+  
+  #navbar {
+    width: 100%;
+    height: 47px;
+    padding: 0;
+    margin-top: -7px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+  }
+  
+  .nav_1st_innder_div {
+    display: flex;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    line-height: 42px;
+  }
+  
+  .com_logo {
+    display: flex;
+    align-items: center;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .search_bar {
+    padding: 6px 13px 6px 1px;
+    width: 75%;
+  }
+  
+  .search_bar_innerdiv {
+    width: 700px;
+    position: relative;
+    background-color: #f1f4f6;
+    /* border: #3e3e3e solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search_icon {
+    width: 27px;
+    height: 33px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* border: red solid; */
+  }
+  
+  #searchbarinfo {
+    width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 30px 7px 0;
+    border: none;
+    outline: 0;
+    bottom: 19px;
+    color: #3e3e3e;
+    text-indent: 12px;
+    height: 34px;
+    border-radius: 0 3px 3px 0;
+    background-color: #f1f4f6;
+    display: inline;
+  }
+  
+  .help_link {
+    display: flex;
+    justify-content: flex-end;
+    height: 46px;
+    align-items: center;
+  }
+  
+  .help_link_innerdiv {
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica, Arial, sans-serif;
+  }
+  
+  .help_link_anc {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .right {
+    margin-left: 100px;
+    width: 70%;
+    margin-top: -25px;
+  }
+  
+  .checkoutbut {
+    width: 80%;
+    margin: auto;
+    background-color: salmon;
+    font-size: 20px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    /* border: red solid; */
+  }
+  
+  .pament_summary {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 35px;
+    line-height: 25px;
+    /* border: red solid; */
+  }
+  
+  .pament_summary > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  

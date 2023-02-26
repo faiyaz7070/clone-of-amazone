@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | 1mg</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvvExfheGYdXS-c2ltBGvTRbbWxB_PfkIUw&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="finalpayment.css" />
+   
+    <!-- <link rel="stylesheet" href="payment copy.css" /> -->
+  </head>
+
+  <body>
+    <!-- nav-bar -->
+
+    
+        <div class="help_link">
+          <div class="help_link_innerdiv">
+            <a href="/help" class="help_link_anc"><span>Need Help?</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="middlecont">
+        <div class="left">
+          <div class="wallet">
+            <div class="wallets">
+              <div class="imgwal">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172217/marketing/vvew3rcvwfjrhknifj1z.png"
+                  alt=""
+                />
+              </div>
+              <div class="cont-wal">WALLETS</div>
+            </div>
+            <!-- second -->
+            <div class="wallets">
+              <div class="imgwal">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1581576219/marketing/p0w0w4crcgcthkom8j23.png"
+                  alt=""
+                />
+              </div>
+              <div class="cont-wal">UPI</div>
+            </div>
+            <div class="wallets">
+              <div class="imgwal">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172186/marketing/p45zk16fua8dmxany3up.png"
+                  alt=""
+                />
+              </div>
+              <div class="cont-wal">CARDS</div>
+            </div>
+            <div class="wallets">
+              <div class="imgwal">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172229/marketing/bsnk5fvtd4b6xffsvjdm.png"
+                  alt=""
+                />
+              </div>
+              <div class="cont-wal">NET BANKING</div>
+            </div>
+            <div class="wallets">
+              <div class="imgwal">
+                <img
+                  src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530172202/marketing/pyzcsicqsnwawi4yrpo7.png"
+                  alt=""
+                />
+              </div>
+              <div class="cont-wal">PAY ON DELIVERY</div>
+            </div>
+          </div>
+          <div class="credicard">
+            <div class="upper">
+              <div class="creditdebit">Credit & Debit Cards</div>
+              <div class="addnew"style = "color:black">Add new Cards For Payment</div>
+            </div>
+
+            <div class="cardnamee" style = "color:black">Card Number</div>
+            <div class="cardin">
+              <input
+              class="all"
+                type="number"
+                placeholder="XXXXXXXXXXXX"
+                id="cardnum"
+                maxlength="9"
+              />
+            </div>
+            <div class="expisc">
+              <div class="expiry" style = "color:black">Expiry Date(MM/YY)</div>
+              <div class="securitycode" style = "color:black">CVV</div>
+            </div>
+            <div class="secinp">
+              <div class="monthyear"></div>
+              <div class="cvv"></div>
+            </div>
+            <div class="namecard">
+              <div id="datediv" style="display: flex; align-items: center;">
+                <input
+                class="all"
+                  type="text"
+                  id="month"
+                  placeholder="MM"
+                  maxlength="2"
+                  oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+                />
+                <p id="slash">/</p>
+                <input
+                class="all"
+                  type="text"
+                  id="year"
+                  placeholder="YY"
+                  maxlength="2"
+                  oninput="this.value=this.value.replace(/[^00-99]/g,'');"
+                />
+              </div>
+              <div class="check" class="all">
+                <input
+                class="all"
+                  type="text"
+                  id="cvv"
+                  placeholder="•••"
+                  maxlength="3"
+                  oninput="this.value=this.value.replace(/[^000-999]/g,'');"
+                />
+              </div>
+            </div>
+
+            <div class="infor">
+              Your card details will be saved securely for future transactions,
+              based on the industry standards.
+            </div>
+            <div class="makepayment">
+              <div class="paymentmake" onclick="makepayment()" style="background-color:  rgba(0, 0, 0, 0.575);">
+                MAKE PAYMENT
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="totalprice" id="totalprice">
+            <!-- calculate the price -->
+          </div>
+
+          <!-- checkout -->
+          <div class="right" id="righ">
+            <div class="checkout">
+              <div class="checkoutbut" style="background-color:  rgba(0, 0, 0, 0.575);">Payment Summary</div>
+              <div class="pament_summary">
+                <div>
+                  <!-- <div id="cartname"> -->
+                  <div>No. Of Items :</div>
+                  <div id="item_no">0</div>
+                </div>
+                <div>
+                  <div>Order Subtotal :</div>
+                  <div id="total"></div>
+                </div>
+                <div>
+                  <div>Discount :</div>
+                  <div id="discount">0%</div>
+                </div>
+                <div>
+                  <div>Tax (GST) :</div>
+                  <div>+18%</div>
+                </div>
+                <div
+                  style="border-bottom: 1px solid #d5d9db; margin-bottom: 5px"
+                >
+                  <div>Shipping :</div>
+                  <div>Free Shipping</div>
+                </div>
+                <div>
+                  <div>Order Total :</div>
+                  <div id="ordertotal">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+      document.querySelector(".com_logo").addEventListener("click",function(){
+          window.location.href = "index.html";
+      })
+  </script>
+  <script src="carddata.js"></script>
+  <script src="finalpayment.js"></script>
+  <script>
+var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+var countarr = JSON.parse(localStorage.getItem("count")) || [];
+
+var total = cartdata.reduce(function (acc, data) {
+  return acc + data.price * data.quantity;
+}, 0);
+
+function showtotal() {
+  var total = cartdata.reduce(function (acc, data) {
+    return acc + data.price * data.quantity;
+  }, 0);
+  document.querySelector("#total").innerText = "₹"+total;
+  var taxtotal = total+18/100*total;
+  document.querySelector("#ordertotal").innerText = "₹"+ taxtotal.toFixed(2)
+
+  if(countarr.length!=0){
+  var promototal = total-26/100*total;
+    document.querySelector("#ordertotal").innerText = "₹"+ Math.floor(promototal.toFixed(2))
+    document.querySelector("#discount").innerText = "-26%"
+}
+}
+
+function items_no() {
+  var itemsno = cartdata.length;
+  document.querySelector("#item_no").innerText = itemsno;
+}
+
+showtotal();
+items_no();
+
+
+
+
+  </script>
+</html>
+

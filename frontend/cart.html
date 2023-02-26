@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amazon</title>
+  
+   <link rel="stylesheet" href="cart.css">
+  </head>
+
+  <body>
+    <!-- nav-bar -->
+    <div class="container">
+      <div id="navbar">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="help_link">
+          <div class="help_link_innerdiv">
+            <a href="/help" class="help_link_anc"><span>Need Help?</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- below-->
+      <div class="belowcont">
+        <div class="left" id="left">
+         
+          <div class="heading" id="productbelow">Order Summary</div>
+          <div class="smallhead" style="margin-bottom: 20px">Your Items</div>
+          <div>
+            <div id="list">
+              <h4>Product</h4>
+              <h4>Product Name</h4>
+              <h4>Price</h4>
+              <h4>Quantity</h4>
+            </div>
+            <div id="container"></div>
+            <div id="checkoutdiv">
+              <div style="display: flex; gap: 10px; align-items: center">
+                <input
+                  id="inputpromo"
+                  type="text"
+                  placeholder="Enter Promocode"
+                />
+                <button id="apply_promo_btn" style="background-color:  rgba(0, 0, 0, 0.575);">Apply Promo</button>
+              </div>
+              <button id="checkout_btn" style="background-color:  rgba(0, 0, 0, 0.575);">Checkout</button>
+            </div>
+          </div>
+          <div class="cartdetail" id="addinghear"></div>
+        </div>
+        <div class="right" id="righ">
+          <div class="checkout">
+            <div class="checkoutbut" style="background-color:  rgba(0, 0, 0, 0.575);">Payment Summary</div>
+            <div class="pament_summary">
+              <div>
+                <!-- <div id="cartname"> -->
+                <div>No. Of Items :</div>
+                <div id="item_no">0</div>
+              </div>
+              <div>
+                <div>Order Subtotal :</div>
+                <div id="total"></div>
+              </div>
+              <div>
+                <div>Discount :</div>
+                <div id="discount">0%</div>
+              </div>
+              <div>
+                <div>Tax (GST) :</div>
+                <div>+18%</div>
+              </div>
+              <div style="border-bottom: 1px solid #d5d9db; margin-bottom: 5px">
+                <div>Shipping :</div>
+                <div>Free Shipping</div>
+              </div>
+              <div>
+                <div>Order Total :</div>
+                <div id="ordertotal">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="cart.js"></script>
+
+<script>
+  document.querySelector(".com_logo").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
+</script>
