@@ -10,7 +10,7 @@ btn.addEventListener("click",()=>{
         rating:document.getElementById("rating").value,
         price:document.getElementById("price").value
     }
-    fetch("http://localhost:4700/addmobile",{
+    fetch("https://amazon-v93x.onrender.com/addmobile",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
@@ -42,7 +42,7 @@ btn1.addEventListener("click",()=>{
         price:document.getElementById("price1").value
         // 
     }
-    fetch(`https://snapper-bell-bottoms.cyclic.app/updatemobile/${Id}`,{
+    fetch(`https://amazon-v93x.onrender.com/updatemobile/${Id}`,{
         method:"PATCH",
         headers:{
             "Content-type":"application/json"
@@ -65,7 +65,7 @@ let btn2=document.getElementById("btn2")
 btn2.addEventListener("click",()=>{
     let Id=document.getElementById("id2").value
   
-    fetch(`https://snapper-bell-bottoms.cyclic.app/delete/${Id}`,{
+    fetch(`https://amazon-v93x.onrender.com/delete/${Id}`,{
         method:"DELETE",
        
         // body:JSON.stringify(obj)
@@ -96,7 +96,7 @@ multi();
 async function multi() {
     try {
 
-        let res = await fetch("https://snapper-bell-bottoms.cyclic.app/mobiles")
+        let res = await fetch("https://amazon-v93x.onrender.com/mobiles")
 
         let data = await res.json();
 

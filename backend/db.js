@@ -15,9 +15,15 @@ const schema=mongoose.Schema({
     versionKey:false
 })
 const MobileModel=mongoose.model("mobile",schema)
+const userSchema=mongoose.Schema({
+    name:{type:String,require:true},
+    email:{type:String,require:true,unique:true},
+    pass:{type:String,require:true}
+})
 
+const UserModel=mongoose.model("user",userSchema)
 module.exports={
-    connection,MobileModel
+    connection,MobileModel,UserModel
 }
 
 

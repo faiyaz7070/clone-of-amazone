@@ -3,7 +3,7 @@ async function multi() {
     
     try {
 
-        let res = await fetch("https://snapper-bell-bottoms.cyclic.app/mobiles")
+        let res = await fetch("https://amazon-v93x.onrender.com/mobiles")
 
         let data = await res.json();
 
@@ -24,7 +24,7 @@ for (let btn of value) {
 }
 async function filter(value) {
     try {
-        let res = await fetch(`https://snapper-bell-bottoms.cyclic.app/${value}`);
+        let res = await fetch(`https://amazon-v93x.onrender.com/${value}`);
         let ans = await res.json();
         console.log(ans)
         displaymg(ans)
@@ -42,7 +42,7 @@ search(value1.value)
 
 async function search(input){
     try {
-        let response = await fetch(`https://snapper-bell-bottoms.cyclic.app/${input}`);
+        let response = await fetch(`https://amazon-v93x.onrender.com/${input}`);
         let answer = await response.json();
         console.log(answer)
         displaymg(answer)
@@ -117,7 +117,9 @@ function displaymg(mg_data) {
             price: ele.price
 
         }
+
         ADC.onclick = () => {
+            
 
             var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
             let flag=false;

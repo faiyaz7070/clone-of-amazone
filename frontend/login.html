@@ -67,7 +67,7 @@
         }
       
 
-        fetch("https://shy-red-crow-fez.cyclic.app/login",{
+        fetch("https://amazon-v93x.onrender.com/login",{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
@@ -76,7 +76,7 @@
         }).then(res=>res.json())
         .then((res)=>{
           console.log(res)
-
+          localStorage.setItem('user', JSON.stringify(userdetail));
           alert("login Successful")
           window.location.href = "index.html";
         } )

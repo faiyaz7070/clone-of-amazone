@@ -40,7 +40,6 @@ function display(cartdata) {
 }
 
 display(cartdata);
-
 var total = cartdata.reduce(function (acc, data) {
   return acc + data.price * data.quantity;
 }, 0);
